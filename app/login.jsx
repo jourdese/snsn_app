@@ -57,7 +57,7 @@ const Login = () => {
                     <Text style={styles.footerText}>
                         Don&apos;t have an account?
                     </Text>
-                    <Pressable>
+                    <Pressable onPress={()=>router.push("./signup")}>
                         <Text style={[styles.footerText, {color: theme.colors.primaryDark, fontWeight: theme.fonts.semibold}]}>Sign up</Text>
                     </Pressable>
                 </View>
