@@ -5,12 +5,14 @@ import {hp, wp} from "../helpers/common";
 import {theme} from "../constants/theme";
 import Button from "../components/Button";
 import {useRouter} from "expo-router";
+import BackButton from "../components/BackButton";
 
 const Welcome = () => {
     const router = useRouter();
     return (
         <ScreenWrapper bg="white">
             <StatusBar style="dark"/>
+            <BackButton router={router}/>
             <View style={styles.container}>
                 {/* welcome image */}
                 <Image style={styles.welcomeImage} resizeMode='contain'
